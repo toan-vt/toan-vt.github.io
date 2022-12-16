@@ -14,9 +14,11 @@ I am a master student in Computer Science at The University of Tennessee at Chat
 
 Recent Updates
 ======
-**Oct 2022**: received NSF travel award for attending **CIKM**
+**Oct 2022**: reviewed for **NeurIPS** 2022 Workshop on Machine Learning for Autonomous Driving.
 
-**Dec 2021**: received NSF travel award for attending **IEEE BigData**
+**Oct 2022**: received a travel award for attending **CIKM**
+
+**Dec 2021**: received a travel award for attending **IEEE BigData**
 
 Publications
 ======
