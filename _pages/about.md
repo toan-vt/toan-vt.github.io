@@ -16,9 +16,9 @@ Recent Updates
 ======
 **Oct 2022**: PC & reviewer for **NeurIPS** 2022 Workshop on Machine Learning for Autonomous Driving.
 
-**Oct 2022**: received a travel award for attending **CIKM**
+**Oct 2022**: received a NSF travel award for attending **CIKM**
 
-**Dec 2021**: received a travel award for attending **IEEE BigData**
+**Dec 2021**: received a NSF travel award for attending **IEEE BigData**
 
 Publications
 ======
