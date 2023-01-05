@@ -29,6 +29,6 @@ Publications
 
 Rishav Sen, **Toan V. Tran**, Seyedmehdi Khaleghian, Mina Sartipi, Himanshu Neema, and Abhishek Dubey, "BTE-Sim: Fast simulation environment for public transportation", Workshop on Big Data Engineering and Analytics in Cyber-Physical Systems at IEEE International Conference on Big Data (BigEACPS at BigData'22)
 
-**Toan V. Tran** and Mina Sartipi, "Neuroevolution for transportation applications", Workshop on Urban Computing at ACM SIGKDD conference on knowledge discovery and data mining (UrbComp at KDD'22) [PDF](https://ieeexplore.ieee.org/document/9671993) [PDF](http://urban-computing.com/urbcomp2022/accept.html)
+**Toan V. Tran** and Mina Sartipi, "Neuroevolution for transportation applications", Workshop on Urban Computing at ACM SIGKDD conference on knowledge discovery and data mining (UrbComp at KDD'22) [PDF](http://urban-computing.com/urbcomp2022/accept.html)
 
 **Toan V. Tran**, Thanh-Nam Doan, and Mina Sartipi, "TSLib: A Unified Traffic Signal Control Framework Using Deep Reinforcement Learning and Benchmarking", IEEE International Conference on Big Data (BigData'21) [PDF](https://ieeexplore.ieee.org/document/9671993)
