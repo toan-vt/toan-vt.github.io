@@ -10,7 +10,7 @@ redirect_from:
 
 About
 ======
-I am a master student in Computer Science at The University of Tennessee at Chattanooga. I have a broad interest in data mining and its applications. Currently, I am working with Dr. Mina Sartipi on urban computing and intelligent transportation systems. I obtained a bachelor degree in Computer Engineering at Ho Chi Minh City University of Technology. During my undergraduate, I spent a summer at TUAT, Tokyo.
+I am a master student in Computer Science at The University of Tennessee at Chattanooga. I have a broad interest in data mining and its applications. Currently, I am working with Dr. Mina Sartipi on urban computing and intelligent transportation systems. I obtained a bachelor degree in Computer Engineering at Ho Chi Minh City University of Technology. During my undergraduate, I spent summers at TUAT, Tokyo.
 
 Recent Updates
 ======
