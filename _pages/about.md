@@ -25,9 +25,9 @@ Publications
 
 **Toan V. Tran** and Mina Sartipi, "Revisiting Pixel-based Traffic Signal Controls using Reinforcement Learning with World Models", Workshop on Artificial Intelligence for Social Good at AAAI 2023 (AI4SG at AAAI'23)
 
-**Toan V. Tran**, Seyedmehdi Khaleghian, Junxuan Zhao, and Mina Sartipi, "SIMCal: A High-Performance Toolkit For Calibrating Traffic Simulation", Workshop on Big Data Engineering and Analytics in Cyber-Physical Systems at IEEE International Conference on Big Data (BigEACPS at BigData'22)
+**Toan V. Tran**, Seyedmehdi Khaleghian, Junxuan Zhao, and Mina Sartipi, "SIMCal: A High-Performance Toolkit For Calibrating Traffic Simulation", IEEE International Conference on Big Data (BigEACPS at BigData'22)
 
-Rishav Sen, **Toan V. Tran**, Seyedmehdi Khaleghian, Mina Sartipi, Himanshu Neema, and Abhishek Dubey, "BTE-Sim: Fast simulation environment for public transportation", Workshop on Big Data Engineering and Analytics in Cyber-Physical Systems at IEEE International Conference on Big Data (BigEACPS at BigData'22)
+Rishav Sen, **Toan V. Tran**, Seyedmehdi Khaleghian, Mina Sartipi, Himanshu Neema, and Abhishek Dubey, "BTE-Sim: Fast simulation environment for public transportation", IEEE International Conference on Big Data (BigEACPS at BigData'22)
 
 **Toan V. Tran** and Mina Sartipi, "Neuroevolution for transportation applications", Workshop on Urban Computing at ACM SIGKDD conference on knowledge discovery and data mining (UrbComp at KDD'22) [PDF](http://urban-computing.com/urbcomp2022/accept.html)
 
