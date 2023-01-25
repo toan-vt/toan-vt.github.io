@@ -14,7 +14,7 @@ I am a master student in Computer Science at The University of Tennessee at Chat
 
 Recent Updates
 ======
-**Jan 2023**: Paper on TSC using world models accepted at AI4SG @ AAAI'23
+**Jan 2023**: Paper on TSC using world models accepted at AI4SG @ **AAAI**'23
 
 **Oct 2022**: PC & reviewer for **NeurIPS** 2022 Workshop on Machine Learning for Autonomous Driving
 
