@@ -14,6 +14,8 @@ I am a master student in Computer Science at The University of Tennessee at Chat
 
 Recent Updates
 ======
+**Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23  
+
 **Mar 2023**: In-coming PhD student at Emory University start in Fall'23, Advisor: Dr. Li Xiong
 
 **Jan 2023**: Paper on TSC using world models accepted at AI4SG @ **AAAI**'23
