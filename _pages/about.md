@@ -14,13 +14,13 @@ I am a master student in Computer Science at The University of Tennessee at Chat
 
 Recent Updates
 ======
+**June 2023**: PC & reviewer for NeurIPS 2023 Workshop on Machine Learning for Autonomous Driving
+
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23  
 
-**Mar 2023**: In-coming PhD student at Emory University start in Fall'23, Advisor: Dr. Li Xiong
+**Mar 2023**: In-coming PhD student at Emory University start in Fall'23, Advisor: [Dr. Li Xiong](http://www.cs.emory.edu/~lxiong/)
 
 **Jan 2023**: Paper on TSC using world models accepted at AI4SG@AAAI'23
-
-**Oct 2022**: PC & reviewer for NeurIPS 2022 Workshop on Machine Learning for Autonomous Driving
 
 Publications
 ======
