@@ -18,7 +18,7 @@ Recent Updates
 
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23  
 
-**Mar 2023**: In-coming PhD student at Emory University start in Fall'23, Advisor: [Dr. Li Xiong](http://www.cs.emory.edu/~lxiong/)
+**Mar 2023**: In-coming PhD student at Emory University start in Fall'23, Advisor: [Dr. Li Xiong](https://scholar.google.com/citations?hl=en&user=jJ8BLgsAAAAJ&view_op=list_works&sortby=pubdate)
 
 **Jan 2023**: Paper on TSC using world models accepted at AI4SG@AAAI'23
 
