@@ -16,6 +16,8 @@ Recent Updates
 ======
 **June 2023**: PC & reviewer for NeurIPS 2023 Workshop on Machine Learning for Autonomous Driving
 
+**June 2023**: Defended M.S Thesis
+
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23  
 
 **Mar 2023**: In-coming PhD student at Emory University start in Fall'23, Advisor: [Dr. Li Xiong](https://scholar.google.com/citations?hl=en&user=jJ8BLgsAAAAJ&view_op=list_works&sortby=pubdate)
