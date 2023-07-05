@@ -86,7 +86,7 @@ author:
   location         : "Chattanooga, TN, USA"
   employer         :
 #   pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
-#   googlescholar    : "http://yourfullgooglescholarurl.com"
+  googlescholar    : "https://scholar.google.com/citations?hl=en&user=yyvEgnIAAAAJ&view_op=list_works&authuser=2&sortby=pubdate"
   email            : toan.tranviet@ieee.org
   researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
   uri              :
