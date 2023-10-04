@@ -10,15 +10,17 @@ redirect_from:
 
 About
 ======
-I am a master student in Computer Science at The University of Tennessee at Chattanooga. I have a broad interest in data mining and its applications. Currently, I am working with Dr. Mina Sartipi on urban computing and intelligent transportation systems. I obtained a bachelor degree in Computer Engineering at Ho Chi Minh City University of Technology. During my undergraduate, I spent a summer at TUAT, Tokyo.
+I am a PhD student in Computer Science at Emory University. I have a broad interest in trustworthy machine learning and its applications. Currently, I am working with Dr. Li Xiong.
 
 Recent Updates
 ======
+**Sept 2023**: Reviewer for IEEE Transactions on Dependable and Secure Computing
+
 **Aug 2023**: Start my PhD at Emory University, Advisor: [Dr. Li Xiong](https://scholar.google.com/citations?hl=en&user=jJ8BLgsAAAAJ&view_op=list_works&sortby=pubdate)
 
 **June 2023**: PC & reviewer for NeurIPS 2023 Workshop on Machine Learning for Autonomous Driving
 
-**June 2023**: Defended M.S Thesis [PDF](http://toan-vt.github.io/files/MS_Thesis.pdf)
+**June 2023**: Finished my M.S program at UTC
 
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23  
 
@@ -43,3 +45,10 @@ Awards
 **Oct 2022**: NSF travel award @ CIKM
 
 **Dec 2021**: NSF travel award @ IEEE BigData
+
+Services
+======
+
+PC & Reviewers for Workshop on Machine Learning for Autonomous Driving @ NeurIPS 2022, 2023
+
+Reviewer for IEEE Transactions on Dependable and Secure Computing
