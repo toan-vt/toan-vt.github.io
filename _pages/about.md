@@ -10,10 +10,13 @@ redirect_from:
 
 About
 ======
-I am a PhD student in Computer Science at Emory University. I have a broad interest in trustworthy machine learning and its applications. Currently, I am working with Dr. Li Xiong.
+I am a PhD student in Computer Science at Emory University. Currently, I am working with Dr. Li Xiong.
+<!-- I have a broad interest in trustworthy machine learning and its applications.  -->
 
 Recent Updates
 ======
+**Oct 2023**: Received a NSF travel award for IEEE TPS 2023.
+
 **Sept 2023**: Reviewer for IEEE Transactions on Dependable and Secure Computing
 
 **Aug 2023**: Start my PhD at Emory University, Advisor: [Dr. Li Xiong](https://scholar.google.com/citations?hl=en&user=jJ8BLgsAAAAJ&view_op=list_works&sortby=pubdate)
@@ -39,6 +42,7 @@ Rishav Sen, **Toan V. Tran**, Seyedmehdi Khaleghian, Mina Sartipi, Himanshu Neem
 
 Awards
 ======
+**Oct 2023**: NSF travel award @ IEEE TPS
 
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award  
 
