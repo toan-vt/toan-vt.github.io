@@ -15,7 +15,13 @@ I am a PhD student in Computer Science at Emory University. Currently, I am work
 
 Recent Updates
 ======
-**Oct 2023**: Received a NSF travel award for IEEE TPS 2023.
+**May 2025**: I do a research internship at ORNL this summer
+
+**May 2025**: Our work DuoLearn on mitigating membership inference attacks for LLMs is accepted at ACL'25 (Findings)
+
+**Aug 2024**: Presented our work on DP synthetic tabular generation using LLMs at TPDP'24
+
+<!--**Oct 2023**: Received a NSF travel award for IEEE TPS 2023.
 
 **Sept 2023**: Reviewer for IEEE Transactions on Dependable and Secure Computing
 
@@ -25,34 +31,20 @@ Recent Updates
 
 **June 2023**: Finished my M.S program at UTC
 
-**Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23  
+**Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23   -->
 
 Publications
 ======
 
-**Toan V. Tran** and Mina Sartipi, "Revisiting Pixel-based Traffic Signal Controls using Reinforcement Learning with World Models", AI4SG workshop at AAAI'23 [PDF](https://amulyayadav.github.io/AI4SG2023/images/38.pdf)
+**Toan Tran** and Li Xiong, "Differentially private tabular data synthesis using large language models", presented at TPDP'24 [arXiv](https://arxiv.org/abs/2406.01457)
 
-**Toan V. Tran**, Seyedmehdi Khaleghian, Junxuan Zhao, and Mina Sartipi, "SIMCal: A High-Performance Toolkit For Calibrating Traffic Simulation", IEEE BigData'22 [PDF](https://ieeexplore.ieee.org/document/10021057)
-
-Rishav Sen, **Toan V. Tran**, Seyedmehdi Khaleghian, Mina Sartipi, Himanshu Neema, and Abhishek Dubey, "BTE-Sim: Fast simulation environment for public transportation", IEEE BigData'22 [PDF](https://ieeexplore.ieee.org/document/10020973)
-
-**Toan V. Tran** and Mina Sartipi, "Neuroevolution for transportation applications", UrbComp workshop at KDD'22 [PDF](http://urban-computing.com/urbcomp2022/file/UrbComp2022_paper_6010.pdf)
-
-**Toan V. Tran**, Thanh-Nam Doan, and Mina Sartipi, "TSLib: A Unified Traffic Signal Control Framework Using Deep Reinforcement Learning and Benchmarking", IEEE BigData'21 [PDF](https://ieeexplore.ieee.org/document/9671993)
-
-Awards
-======
-**Oct 2023**: NSF travel award @ IEEE TPS
-
-**Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award  
-
-**Oct 2022**: NSF travel award @ CIKM
-
-**Dec 2021**: NSF travel award @ IEEE BigData
+**Toan Tran**, Ruixuan Liu, and Li Xiong "Tokens for Learning, Tokens for Unlearning: Mitigating Membership Inference Attacks in Large Language Models via Dual-Purpose Training", ACL'25 (Findings) [arXiv](https://arxiv.org/abs/2502.19726)
 
 Services
 ======
 
 PC & Reviewers for Workshop on Machine Learning for Autonomous Driving @ NeurIPS 2022, 2023
 
-Reviewer for IEEE Transactions on Dependable and Secure Computing
+Reviewer for IEEE Transactions on Dependable and Secure Computing [2024]
+
+Reviewer for ACM Computing Surveys [2024]
