@@ -15,6 +15,8 @@ I am a PhD student in Computer Science at Emory University. Currently, I am work
 
 Recent Updates
 ======
+**Jun 2025**: Our paper on leveraging LLMs for synthetic mobility data receives the best student paper award at IEEE MDM'25
+
 **May 2025**: I do a research internship at ORNL this summer
 
 **May 2025**: Our work DuoLearn on mitigating membership inference attacks for LLMs is accepted at ACL'25 (Findings)
@@ -33,7 +35,7 @@ Recent Updates
 
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23   -->
 
-Publications
+Selected Publications
 ======
 
 **Toan Tran** and Li Xiong, "Differentially private tabular data synthesis using large language models", presented at TPDP'24 [arXiv](https://arxiv.org/abs/2406.01457)
