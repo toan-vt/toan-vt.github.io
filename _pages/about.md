@@ -45,7 +45,7 @@ Selected Papers
 Services
 ======
 
-PC & Reviewers for Workshop on Machine Learning for Autonomous Driving @ NeurIPS 2022, 2023, 2024
+PC & Reviewers for Workshop on Machine Learning for Autonomous Driving @ NeurIPS'22, '23; @ AAAI'25
 
 Reviewer for IEEE Transactions on Dependable and Secure Computing [2024]
 
