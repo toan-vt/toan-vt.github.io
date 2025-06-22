@@ -35,7 +35,7 @@ Recent Updates
 
 **Apr 2023**: UTC Graduate Schools Outstanding Graduate Student Award for the academic year 2022-23   -->
 
-Selected Publications
+Selected Papers
 ======
 
 **Toan Tran** and Li Xiong, "Differentially private tabular data synthesis using large language models", presented at TPDP'24 [arXiv](https://arxiv.org/abs/2406.01457)
