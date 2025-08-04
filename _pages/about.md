@@ -15,6 +15,8 @@ I am a PhD student in Computer Science at Emory University. Currently, I am work
 
 Recent Updates
 ======
+**Aug 2025**: This is to test our proposed E&#8203;xpShi&#8205;eld!
+
 **Jun 2025**: Our paper on leveraging LLMs for synthetic mobility data receives the best student paper award at IEEE MDM'25
 
 **May 2025**: I do a research internship at ORNL this summer
