@@ -60,7 +60,7 @@ export const Portfolio: React.FC = () => {
                                 <MapPin className="w-4 h-4 text-blue-800"/>
                                 <span>{userProfile.contact.location}</span>
                             </div>
-                            <a href={`https://${userProfile.contact.github}`} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:underline text-blue-800">
+                            <a href={userProfile.contact.github} target="_blank" rel="noreferrer" className="flex items-center gap-2 hover:underline text-blue-800">
                                 <Github className="w-4 h-4" /> Github
                             </a>
                             <a href={`mailto:${userProfile.contact.email}`} className="flex items-center gap-2 hover:underline text-blue-800">
