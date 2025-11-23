@@ -10,6 +10,9 @@ export const generateChatResponse = async (
   prompt: string, 
   history: { role: 'user' | 'model', text: string }[] = []
 ): Promise<string> => {
+
+  return "Sorry, I am still in development. I will be able to access Toan's data and answer questions in the next version. You can ask me about Toan's research, projects, and other information."
+  
   if (!apiKey) {
     return "API_KEY_MISSING: Please provide a valid API Key in the environment variables.";
   }
