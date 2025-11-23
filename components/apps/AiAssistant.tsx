@@ -11,7 +11,7 @@ interface Message {
 
 export const AiAssistant: React.FC = () => {
   const [messages, setMessages] = useState<Message[]>([
-    { id: 0, role: 'model', text: "Greetings, User. I am the ToanOS Assistant. How may I assist you?" }
+    { id: 0, role: 'model', text: "Greetings, User. I am the ToanOS Assistant. I am still in development. I will be able to access Toan's data and answer questions in the next version. You can ask me about Toan's research, projects, and other information." }
   ]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
@@ -57,7 +57,7 @@ export const AiAssistant: React.FC = () => {
       </div>
 
       {/* Messages */}
-      <div className="flex-1 overflow-y-auto p-2 space-y-2 bg-white border-2 bevel-in m-1 font-mono text-sm text-black">
+      <div className="flex-1 overflow-y-auto p-2 space-y-2 bg-white border-2 bevel-in m-1 font-mono text-sm text-black select-text">
         {messages.map((msg) => (
           <div
             key={msg.id}
