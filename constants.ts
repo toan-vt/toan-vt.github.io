@@ -143,7 +143,7 @@ export const userProfile: MockData = {
   ],
   contact: {
     email: "vtran29@emory.edu", 
-    github: "https://github.com/toan-vt",
+    github: "github.com/toan-vt",
     linkedin: "https://www.linkedin.com/in/toan-tranviet",
     location: "Atlanta, GA",
     googleScholar: "https://scholar.google.com/citations?hl=en&user=yyvEgnIAAAAJ&view_op=list_works&authuser=2&sortby=pubdate",
