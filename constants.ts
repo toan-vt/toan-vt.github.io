@@ -103,7 +103,7 @@ export const userProfile: MockData = {
     { date: "Oct 2025", text: "E​xpShi‍eld got accepted to NDSS'26." },
     { date: "Aug 2025", text: "This is to test our proposed E​xpShi‍eld!" },
     { date: "Jun 2025", text: "Our paper on leveraging LLMs for synthetic mobility data receives the best student paper award at IEEE MDM'25" },
-    { date: "May 2025", text: "I interned at ORNL this summer" },
+    { date: "May 2025", text: "I will be interning at Oak Ridge National Laboratory this summer"},
     { date: "May 2025", text: "Our work DuoLearn on mitigating membership inference attacks for LLMs is accepted at ACL'25 (Findings)" },
     { date: "Aug 2024", text: "Presented our work on DP synthetic tabular generation using LLMs at TPDP'24" }
   ],
