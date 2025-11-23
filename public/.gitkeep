@@ -1,0 +1,4 @@
+# Public directory for static assets
+# Files in this directory will be served at the root during development
+# and copied to the dist folder during build
+

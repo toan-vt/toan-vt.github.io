@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ToanOS - 98 Edition</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+      body { 
+        font-family: 'Tahoma', 'Segoe UI', Geneva, Verdana, sans-serif; 
+        overflow: hidden; 
+        background-color: #008080;
+      }
+      
+      /* Retro Scrollbar */
+      ::-webkit-scrollbar { width: 16px; height: 16px; }
+      ::-webkit-scrollbar-track { background: #dfdfdf; }
+      ::-webkit-scrollbar-thumb { 
+        background: #c0c0c0; 
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #404040;
+        border-bottom: 1px solid #404040;
+        box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
+      }
+      ::-webkit-scrollbar-button {
+        background: #c0c0c0;
+        width: 16px;
+        height: 16px;
+        border-top: 1px solid #fff;
+        border-left: 1px solid #fff;
+        border-right: 1px solid #404040;
+        border-bottom: 1px solid #404040;
+        box-shadow: inset -1px -1px 0 #808080, inset 1px 1px 0 #dfdfdf;
+      }
+      
+      /* Retro Bevel Utilities */
+      .bevel-out {
+        box-shadow: inset 1px 1px #fff, inset -1px -1px #404040, inset 2px 2px #dfdfdf, inset -2px -2px #808080;
+      }
+      .bevel-in {
+        box-shadow: inset 1px 1px #404040, inset -1px -1px #fff, inset 2px 2px #808080, inset -2px -2px #dfdfdf;
+      }
+      .bevel-window {
+        box-shadow: inset 1px 1px #dfdfdf, inset -1px -1px #000, inset 2px 2px #fff, inset -2px -2px #808080;
+      }
+    </style>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

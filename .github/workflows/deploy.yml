@@ -1,0 +1,100 @@
+name: Node Build & Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  workflow_dispatch:
+
+# Required for GitHub Pages deployments
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# GitHub Pages recommends this concurrency block
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build-and-preview:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: |
+          if [ -f package-lock.json ]; then
+            npm ci
+          else
+            npm install
+          fi
+
+      - name: Create .env.local
+        run: |
+          touch .env.local
+          echo "GEMINI_API_KEY=${{ secrets.GEMINI_API_KEY }}" >> .env.local
+        shell: bash
+
+      - name: Build
+        run: npm run build
+
+      # Optional: only run preview on push/PR, not needed for deploy itself
+      - name: Run preview and health check
+        run: |
+          npm run preview -- --host 0.0.0.0 --port 4173 &
+          PREVIEW_PID=$!
+
+          echo "Waiting for preview server to start..."
+          for i in {1..30}; do
+            if curl -fsS "http://localhost:4173" > /dev/null 2>&1; then
+              echo "Preview server is up ✅"
+              break
+            fi
+            echo "Still waiting..."
+            sleep 2
+          done
+
+          if ! curl -fsS "http://localhost:4173" > /dev/null 2>&1; then
+            echo "❌ Preview server did not start correctly"
+            kill $PREVIEW_PID || true
+            exit 1
+          fi
+
+          echo "✅ Preview responded successfully, stopping server..."
+          kill $PREVIEW_PID || true
+        shell: bash
+
+      # Configure Pages (recommended by GitHub, even for non-Jekyll sites)
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+
+      # Upload the built Vite site (dist) as the Pages artifact
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: ./dist
+
+  deploy:
+    # Only deploy on push (not on PRs)
+    if: github.event_name == 'push'
+    needs: build-and-preview
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
