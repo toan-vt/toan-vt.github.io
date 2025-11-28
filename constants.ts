@@ -98,7 +98,7 @@ export const initialWindows: WindowState[] = [
 export const userProfile: MockData = {
   name: "Toan Tran",
   role: "PhD Student at Emory University",
-  about: "I am a PhD student in Computer Science at Emory University, advised by Dr. Li Xiong.",
+  about: "I am a PhD student in Computer Science at Emory University, advised by Dr. Li Xiong. I build scalable, privacy-preserving ML/LLM systems by developing new LLM training methods, differentially private synthetic data generation algorithms, and emerging agentic frameworks that advance secure and trustworthy AI.",
   updates: [
     { date: "Oct 2025", text: "E​xpShi‍eld got accepted to NDSS'26." },
     { date: "Aug 2025", text: "This is to test our proposed E​xpShi‍eld!" },
