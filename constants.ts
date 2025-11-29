@@ -133,7 +133,7 @@ export const userProfile: MockData = {
     {
       title: "Privacy Agents: A New Privacy Assessment Framework",
       date: "2025-11-22",
-      excerpt: "A new privacy assessment framework that uses LLMs to assess the privacy of a system. I also explore the use of LLMs to generate privacy policies and data use agreements."
+      excerpt: "A new privacy assessment framework that uses LLMs to assess privacy risks of a system."
     },
     // {
     //   title: "The Future of Privacy Preserving AI",
