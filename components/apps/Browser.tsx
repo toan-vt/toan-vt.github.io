@@ -22,7 +22,7 @@ export const Browser: React.FC = () => {
 
   const favorites = [
     { name: 'My Homepage', url: 'https://toan-vt.github.io/' },
-    { name: 'Google', url: 'https://www.google.com' },
+    { name: 'WPEC Badminton Calendar', url: 'https://wpcal.github.io/' },
     { name: 'Wikipedia', url: 'https://en.wikipedia.org/wiki/Main_Page' },
   ];
 
