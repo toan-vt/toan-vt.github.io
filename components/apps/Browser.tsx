@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { ArrowLeft, ArrowRight, RefreshCw, Home, ExternalLink, Globe, Lock } from 'lucide-react';
 
 export const Browser: React.FC = () => {
-  const DEFAULT_URL = 'https://toan-vt.github.io/';
+  const DEFAULT_URL = 'https://en.wikipedia.org/wiki/Main_Page';
   const [url, setUrl] = useState(DEFAULT_URL);
   const [currentSrc, setCurrentSrc] = useState(DEFAULT_URL);
 
