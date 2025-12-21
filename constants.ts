@@ -100,6 +100,7 @@ export const userProfile: MockData = {
   role: "PhD Student at Emory University",
   about: "I am a PhD student in Computer Science at Emory University, advised by Dr. Li Xiong. I build scalable, privacy-preserving ML/LLM systems by developing new LLM training methods, differentially private synthetic data generation algorithms, and emerging agentic frameworks that advance secure and trustworthy AI.",
   updates: [
+    { date: "Dec 2025", text: "I'll be interning at Google (Sunnyvale) in Summer 2026." },
     { date: "Oct 2025", text: "E​xpShi‍eld got accepted to NDSS'26." },
     { date: "Aug 2025", text: "This is to test our proposed E​xpShi‍eld!" },
     { date: "Jun 2025", text: "Our paper on leveraging LLMs for synthetic mobility data receives the best student paper award at IEEE MDM'25" },
