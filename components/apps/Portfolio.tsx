@@ -98,7 +98,7 @@ export const Portfolio: React.FC = () => {
           <div className="animate-in fade-in duration-300">
             <div className="flex items-center gap-2 border-b-2 border-[#000080] mb-6 pb-1">
                 <BookOpen className="w-5 h-5 text-[#000080]" />
-                <h3 className="text-lg font-bold font-sans uppercase text-[#000080]">Selected Publications</h3>
+                <h3 className="text-lg font-bold font-sans uppercase text-[#000080]">Papers</h3>
             </div>
             {userProfile.contact.googleScholar && (
                 <div className="mt-8 flex justify-center pb-4">
