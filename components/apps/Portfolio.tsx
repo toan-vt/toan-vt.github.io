@@ -10,7 +10,7 @@ export const Portfolio: React.FC = () => {
 
   const pages: { id: PageId; label: string; icon: any }[] = [
     { id: 'home', label: 'Home', icon: Home },
-    { id: 'publications', label: 'Publications', icon: BookOpen },
+    { id: 'publications', label: 'Papers', icon: BookOpen },
     { id: 'services', label: 'Services', icon: Briefcase },
     { id: 'blogs', label: 'Blogs', icon: FileText },
   ];
