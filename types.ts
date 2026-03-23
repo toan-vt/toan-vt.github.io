@@ -29,7 +29,7 @@ export interface MockData {
   papers: { 
     title: string; 
     authors: string; 
-    venue: string; 
+    description: string; 
     link?: string; 
     linkText?: string 
   }[];

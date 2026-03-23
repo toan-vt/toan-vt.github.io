@@ -112,21 +112,21 @@ export const userProfile: MockData = {
     {
       title: "Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents",
       authors: "Toan Tran, Olivera Kotevska, and Li Xiong",
-      venue: "The first proof of concept using LLM for auto discovery SOTA MIAs",
+      description: "The first proof of concept using LLM for auto discovery SOTA MIAs",
       link: "https://arxiv.org/abs/2603.19375",
       linkText: "arXiv"
     },
     {
       title: "Tokens for Learning, Tokens for Unlearning: Mitigating Membership Inference Attacks in Large Language Models via Dual-Purpose Training",
       authors: "Toan Tran, Ruixuan Liu, and Li Xiong",
-      venue: "The first defense method against MIAs for LLMs without DP",
+      description: "The first defense method against MIAs for LLMs without DP",
       link: "https://arxiv.org/abs/2502.19726",
       linkText: "arXiv"
     },
     {
       title: "Differentially private tabular data synthesis using large language models",
       authors: "Toan Tran and Li Xiong",
-      venue: "Pioneer the use of LLMs for DP tabular data synthesis",
+      description: "Pioneer the use of LLMs for DP tabular data synthesis",
       link: "https://arxiv.org/abs/2406.01457",
       linkText: "arXiv"
     }

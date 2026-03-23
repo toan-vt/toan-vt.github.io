@@ -123,7 +123,7 @@ export const Portfolio: React.FC = () => {
                             {paper.authors}
                         </p>
                         <div className="flex items-center justify-between bg-gray-100 p-2 rounded-sm border border-gray-200">
-                            <span className="font-bold text-gray-700 text-xs uppercase tracking-wider">{paper.venue}</span>
+                            <span className="font-bold text-gray-700 text-xs tracking-wider">{paper.description}</span>
                             {paper.link && (
                                 <a 
                                   href={paper.link} 
