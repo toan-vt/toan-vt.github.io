@@ -129,7 +129,7 @@ export const userProfile: MockData = {
       venue: "Pioneer the use of LLMs for DP tabular data synthesis",
       link: "https://arxiv.org/abs/2406.01457",
       linkText: "arXiv"
-    },
+    }
   ],
   services: [
     "Reviewer for AAAI'26, Reliable ML @ NeurIPS'25, SIGSPATIAL 2025",
