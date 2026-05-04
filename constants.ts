@@ -115,8 +115,8 @@ export const userProfile: MockData = {
       title: "Differentially Private Synthetic Tabular Data via Private Evolution",
       authors: "Toan Tran, Arturs Backurs, Zinan Lin, Victor Reis, Li Xiong, and Sergey Yekhanin",
       description: "Private Evolution for high-order tabular synthesis with DP. Running on CPUs but 28x faster than GPU-enabled previous SOTA algorithm.",
-      link: "TBD",
-      linkText: "ICML'26"
+      link: "https://arxiv.org/abs/TBD",
+      linkText: "ICML26"
     },
     {
       title: "Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents",
@@ -130,7 +130,7 @@ export const userProfile: MockData = {
       authors: "Toan Tran, Ruixuan Liu, and Li Xiong",
       description: "The first defense method against MIAs for LLMs without DP.",
       link: "https://arxiv.org/abs/2502.19726",
-      linkText: "ACL'25"
+      linkText: "ACL25"
     },
     {
       title: "Differentially private tabular data synthesis using large language models",
