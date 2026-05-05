@@ -101,7 +101,7 @@ export const userProfile: MockData = {
   about: "I am a PhD student in Computer Science at Emory University, advised by Dr. Li Xiong. I build scalable, privacy-preserving ML/LLM systems by developing new LLM training methods, differentially private synthetic data generation algorithms, and emerging agentic frameworks that advance secure and trustworthy AI.",
   updates: [
     { date: "Apr 2026", text: "Tab-PE got accepted to ICML." },
-    { date: "Mar 2026", text: "Excited to demonstrate LLM Agents can explore MIAs with SOTA performance. https://arxiv.org/abs/2603.19375" },
+    { date: "Mar 2026", text: "Excited to demonstrate LLM Agents can explore MIAs with SOTA performance. [arXiv](https://arxiv.org/abs/2603.19375)" },
     { date: "Dec 2025", text: "I'll be interning at Google (Sunnyvale) in Summer 2026." },
     { date: "Oct 2025", text: "E​xpShi‍eld got accepted to NDSS'26." },
     { date: "Aug 2025", text: "This is to test our proposed E​xpShi‍eld!" },
@@ -111,13 +111,6 @@ export const userProfile: MockData = {
     { date: "Aug 2024", text: "Presented our work on DP synthetic tabular generation using LLMs at TPDP'24" }
   ],
   papers: [
-    {
-      title: "Differentially Private Synthetic Tabular Data via Private Evolution",
-      authors: "Toan Tran, Arturs Backurs, Zinan Lin, Victor Reis, Li Xiong, and Sergey Yekhanin",
-      description: "Private Evolution for high-order tabular synthesis with DP. Running on CPUs but 28x faster than GPU-enabled previous SOTA algorithm.",
-      link: "#",
-      linkText: "ICML26"
-    },
     {
       title: "Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents",
       authors: "Toan Tran, Olivera Kotevska, and Li Xiong",
@@ -130,7 +123,7 @@ export const userProfile: MockData = {
       authors: "Toan Tran, Ruixuan Liu, and Li Xiong",
       description: "The first defense method against MIAs for LLMs without DP.",
       link: "https://arxiv.org/abs/2502.19726",
-      linkText: "ACL25"
+      linkText: "arXiv"
     },
     {
       title: "Differentially private tabular data synthesis using large language models",
