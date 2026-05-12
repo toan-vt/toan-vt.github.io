@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { AppConfig, AppId } from '../types';
-import { userProfile } from '../constants';
+import { DEFAULT_APP_ICON, userProfile } from '../constants';
 
 interface StartMenuProps {
   apps: Record<AppId, AppConfig>;
@@ -34,7 +34,7 @@ export const StartMenu: React.FC<StartMenuProps> = ({ apps, onAppClick }) => {
               onClick={() => onAppClick(app.id)}
               className="w-full flex items-center gap-3 px-2 py-2 hover:bg-[#000080] hover:text-white text-black group text-left text-sm"
             >
-              <img src={app.icon} alt={app.title} className="w-8 h-8" />
+              <img src={app.icon || DEFAULT_APP_ICON} alt={app.title} className="w-8 h-8" />
               <div className="flex flex-col">
                 <span className="font-bold leading-none">{app.title}</span>
                 <span className="text-[10px] opacity-70 group-hover:text-white text-gray-600 leading-none mt-1">{app.description}</span>

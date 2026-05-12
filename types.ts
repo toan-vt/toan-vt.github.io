@@ -1,11 +1,12 @@
-
-export type AppId = 'portfolio' | 'notepad' | 'calculator' | 'terminal' | 'ai-assistant' | 'sketch' | 'browser' | 'tictactoe' | 'minesweeper';
+export type AppId = 'portfolio' | 'notepad' | 'calculator' | 'terminal' | 'ai-assistant' | 'sketch' | 'browser' | 'tictactoe' | 'minesweeper' | 'badminton' | 'automia';
 
 export interface AppConfig {
   id: AppId;
   title: string;
-  icon: string; // URL to the icon image
+  type?: 'native' | 'website';
+  icon?: string; // URL to the icon image
   description: string;
+  url?: string;
   defaultSize?: { width: number; height: number };
 }
 

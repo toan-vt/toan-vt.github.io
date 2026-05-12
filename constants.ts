@@ -12,8 +12,12 @@ const ICONS = {
   mine: 'https://win98icons.alexmeub.com/icons/png/game_mine_1-0.png',
   game: 'https://win98icons.alexmeub.com/icons/png/game_solitaire-0.png',
   ai: 'https://win98icons.alexmeub.com/icons/png/help_book_cool-0.png',
-  user: 'https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png'
+  user: 'https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png',
+  badminton: '/images/badminton.png',
+  automia: '/images/automia.png'
 };
+
+export const DEFAULT_APP_ICON = ICONS.ie;
 
 export const apps: Record<AppId, AppConfig> = {
   portfolio: {
@@ -78,6 +82,24 @@ export const apps: Record<AppId, AppConfig> = {
     icon: ICONS.mine,
     description: 'Find the mines',
     defaultSize: { width: 300, height: 380 }
+  },
+  badminton: {
+    id: 'badminton',
+    title: 'Badminton',
+    icon: ICONS.badminton,
+    type: 'website',
+    description: 'Badminton website',
+    url: 'https://toan-vt.github.io/badminton',
+    defaultSize: { width: 900, height: 700 }
+  },
+  automia: {
+    id: 'automia',
+    title: 'Automia',
+    type: 'website',
+    icon: ICONS.automia,
+    description: 'Automated Membership Inference Attacks',
+    url: 'https://toan-vt.github.io/automia',
+    defaultSize: { width: 900, height: 700 }
   }
 };
 
@@ -145,11 +167,6 @@ export const userProfile: MockData = {
       date: "2025-11-22",
       excerpt: "A new privacy assessment framework that uses LLMs to assess privacy risks of a system."
     },
-    // {
-    //   title: "The Future of Privacy Preserving AI",
-    //   date: "2024-12-10",
-    //   excerpt: "Exploring how differential privacy can be applied to Large Language Models..."
-    // }
   ],
   contact: {
     email: "vtran29@emory.edu", 

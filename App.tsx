@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef } from 'react';
-import { apps, initialWindows } from './constants';
+import { DEFAULT_APP_ICON, apps, initialWindows } from './constants';
 import { AppId, WindowState } from './types';
 import { Taskbar } from './components/Taskbar';
 import { WindowFrame } from './components/WindowFrame';
@@ -17,6 +17,7 @@ import { Sketch } from './components/apps/Sketch';
 import { Browser } from './components/apps/Browser';
 import { TicTacToe } from './components/apps/TicTacToe';
 import { Minesweeper } from './components/apps/Minesweeper';
+import { WebsiteApp } from './components/apps/WebsiteApp';
 
 const App: React.FC = () => {
   // Simple mobile detection
@@ -94,7 +95,7 @@ const App: React.FC = () => {
       const newWindow: WindowState = {
         id: appId,
         title: appConfig.title,
-        icon: appConfig.icon,
+        icon: appConfig.icon || DEFAULT_APP_ICON,
         isOpen: true,
         isMinimized: false,
         // Auto maximize on mobile
@@ -159,6 +160,16 @@ const App: React.FC = () => {
   };
 
   const renderAppContent = (id: AppId) => {
+    const appConfig = apps[id];
+
+    if (appConfig.type === 'website') {
+      if (!appConfig.url) {
+        return <div className="p-4">Website URL not configured</div>;
+      }
+
+      return <WebsiteApp title={appConfig.title} url={appConfig.url} />;
+    }
+
     switch (id) {
       case 'portfolio': return <Portfolio />;
       case 'notepad': return <Notepad />;

@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { AppConfig } from '../types';
+import { DEFAULT_APP_ICON } from '../constants';
 
 interface DesktopIconProps {
   app: AppConfig;
@@ -15,7 +16,7 @@ export const DesktopIcon: React.FC<DesktopIconProps> = ({ app, onClick }) => {
     >
       {/* Pixel Art Icon */}
       <img 
-        src={app.icon} 
+        src={app.icon || DEFAULT_APP_ICON} 
         alt={app.title} 
         className="w-10 h-10 object-contain rendering-pixelated filter drop-shadow-md"
         style={{ imageRendering: 'pixelated' }}
