@@ -1,4 +1,4 @@
 <div align="center">
-   Vibe Coded with Gemini 3, Nov 2025
+   Vibe Coded with Google AI Studio, Claude Code, Codex. Nov 2025 - present
 </div>
 

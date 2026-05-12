@@ -263,7 +263,7 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onOpenApp }) => {
         
         {/* Footer */}
         <div className="mt-12 text-center text-xs font-sans text-gray-400 border-t border-gray-200 pt-4">
-           Vibe Coded with Gemini 3, 2025
+           Vibe Coded with Google AI Studio, Claude Code, Codex. Nov 2025 - present
         </div>
       </div>
     </div>
