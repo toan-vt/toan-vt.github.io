@@ -6,9 +6,10 @@ import { DEFAULT_APP_ICON, userProfile } from '../constants';
 interface StartMenuProps {
   apps: Record<AppId, AppConfig>;
   onAppClick: (id: AppId) => void;
+  onShutdown: () => void;
 }
 
-export const StartMenu: React.FC<StartMenuProps> = ({ apps, onAppClick }) => {
+export const StartMenu: React.FC<StartMenuProps> = ({ apps, onAppClick, onShutdown }) => {
   return (
     <div 
       id="start-menu"
@@ -45,7 +46,10 @@ export const StartMenu: React.FC<StartMenuProps> = ({ apps, onAppClick }) => {
 
         <div className="h-[1px] bg-white border-b border-[#808080] my-1"></div>
 
-        <button className="w-full flex items-center gap-3 px-2 py-2 hover:bg-[#000080] hover:text-white text-black group text-left">
+        <button
+          onClick={onShutdown}
+          className="w-full flex items-center gap-3 px-2 py-2 hover:bg-[#000080] hover:text-white text-black group text-left"
+        >
            <div className="w-8 flex justify-center">
               <img src="https://win98icons.alexmeub.com/icons/png/shut_down_cool-0.png" className="w-8 h-8" alt="shutdown" />
            </div>

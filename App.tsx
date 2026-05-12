@@ -6,6 +6,7 @@ import { Taskbar } from './components/Taskbar';
 import { WindowFrame } from './components/WindowFrame';
 import { DesktopIcon } from './components/DesktopIcon';
 import { StartMenu } from './components/StartMenu';
+import { ShutdownDialog } from './components/ShutdownDialog';
 
 // Import App Components
 import { Portfolio } from './components/apps/Portfolio';
@@ -19,44 +20,52 @@ import { TicTacToe } from './components/apps/TicTacToe';
 import { Minesweeper } from './components/apps/Minesweeper';
 import { WebsiteApp } from './components/apps/WebsiteApp';
 
+const getInitialWindows = (isMobile: boolean): WindowState[] => {
+  if (isMobile) {
+    return initialWindows.map(w => ({
+      ...w,
+      isMaximized: true,
+      position: { x: 0, y: 0 }
+    }));
+  }
+
+  return initialWindows.map(w => {
+    if (w.id === 'portfolio' && typeof window !== 'undefined') {
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      const taskbarHeight = 35;
+      const width = Math.floor(viewportWidth * 0.8);
+      const height = Math.floor((viewportHeight - taskbarHeight) * 0.8);
+
+      return {
+        ...w,
+        size: { width, height },
+        position: {
+          x: Math.floor((viewportWidth - width) / 2),
+          y: Math.floor((viewportHeight - taskbarHeight - height) / 2)
+        }
+      };
+    }
+
+    return w;
+  });
+};
+
+const wait = (ms: number) => new Promise<void>((resolve) => {
+  window.setTimeout(resolve, ms);
+});
+
 const App: React.FC = () => {
   // Simple mobile detection
   const isMobile = typeof window !== 'undefined' && window.innerWidth < 768;
 
   // Initialize windows with mobile check
-  const [windows, setWindows] = useState<WindowState[]>(() => {
-    if (isMobile) {
-      return initialWindows.map(w => ({
-        ...w,
-        isMaximized: true,
-        position: { x: 0, y: 0 }
-      }));
-    }
-    // Calculate responsive size for initial Portfolio window
-    const updatedWindows = initialWindows.map(w => {
-      if (w.id === 'portfolio' && typeof window !== 'undefined') {
-        const viewportWidth = window.innerWidth;
-        const viewportHeight = window.innerHeight;
-        const taskbarHeight = 35;
-        return {
-          ...w,
-          size: {
-            width: Math.floor(viewportWidth * 0.8),
-            height: Math.floor((viewportHeight - taskbarHeight) * 0.8)
-          },
-          position: {
-            x: Math.floor((viewportWidth - Math.floor(viewportWidth * 0.8)) / 2),
-            y: Math.floor((viewportHeight - taskbarHeight - Math.floor((viewportHeight - taskbarHeight) * 0.8)) / 2)
-          }
-        };
-      }
-      return w;
-    });
-    return updatedWindows;
-  });
+  const [windows, setWindows] = useState<WindowState[]>(() => getInitialWindows(isMobile));
 
   const [activeWindowId, setActiveWindowId] = useState<AppId | null>(null);
   const [startMenuOpen, setStartMenuOpen] = useState(false);
+  const [shutdownOpen, setShutdownOpen] = useState(false);
+  const [isPoweredOff, setIsPoweredOff] = useState(false);
   const desktopRef = useRef<HTMLDivElement>(null);
   
   // Open or focus an app
@@ -159,6 +168,42 @@ const App: React.FC = () => {
     );
   };
 
+  const openShutdownDialog = () => {
+    setStartMenuOpen(false);
+    setShutdownOpen(true);
+  };
+
+  const restoreDefaultDesktop = () => {
+    setWindows(getInitialWindows(isMobile));
+    setActiveWindowId('portfolio');
+    setStartMenuOpen(false);
+    setShutdownOpen(false);
+    setIsPoweredOff(false);
+  };
+
+  const beginPowerAction = async () => {
+    setActiveWindowId(null);
+    setStartMenuOpen(false);
+
+    const windowsToClose = windows.length;
+    if (windowsToClose === 0) {
+      await wait(300);
+      return;
+    }
+
+    for (let i = 0; i < windowsToClose; i += 1) {
+      await wait(300);
+      setWindows((prev) => prev.slice(0, -1));
+    }
+
+    await wait(200);
+  };
+
+  const completeShutdown = () => {
+    setShutdownOpen(false);
+    setIsPoweredOff(true);
+  };
+
   const renderAppContent = (id: AppId) => {
     const appConfig = apps[id];
 
@@ -200,6 +245,17 @@ const App: React.FC = () => {
       className="h-[100dvh] w-screen overflow-hidden relative font-sans select-none bg-[#008080]"
       ref={desktopRef}
     >
+      {isPoweredOff ? (
+        <div className="absolute inset-0 z-[30000] flex items-center justify-center bg-black text-white px-4">
+          <button
+            onClick={restoreDefaultDesktop}
+            className="px-5 py-3 bg-[#c0c0c0] bevel-out active:bevel-in text-black text-sm font-bold"
+          >
+            Turn On
+          </button>
+        </div>
+      ) : (
+        <>
       {/* Desktop Grid - Responsive */}
       <div className="absolute top-0 left-0 h-full w-full p-2 md:p-4 grid grid-flow-col grid-rows-[repeat(auto-fill,90px)] gap-4 content-start justify-start z-0">
         {Object.entries(apps).map(([key, app]) => (
@@ -235,6 +291,16 @@ const App: React.FC = () => {
         <StartMenu 
           apps={apps} 
           onAppClick={openApp} 
+          onShutdown={openShutdownDialog}
+        />
+      )}
+
+      {shutdownOpen && (
+        <ShutdownDialog
+          onCancel={() => setShutdownOpen(false)}
+          onBeginPowerAction={beginPowerAction}
+          onShutdownComplete={completeShutdown}
+          onRestartComplete={restoreDefaultDesktop}
         />
       )}
 
@@ -247,6 +313,8 @@ const App: React.FC = () => {
         onMinimize={minimizeWindow}
         startMenuOpen={startMenuOpen}
       />
+        </>
+      )}
     </div>
   );
 };
