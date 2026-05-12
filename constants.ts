@@ -134,16 +134,26 @@ export const userProfile: MockData = {
   ],
   papers: [
     {
+      title: "Differentially Private Synthetic Tabular Data via Private Evolution",
+      authors: "Toan Tran, Arturs Backurs, Zinan Lin, Victor Reis, Li Xiong, and Sergey Yekhanin",
+      description: "30x faster DP high-order tabular data synthesis using Private Evolution.",
+      venue: "ICML'26",
+      link: "https://arxiv.org/abs/tbd",
+      linkText: "arXiv",
+    },
+    {
       title: "Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents",
       authors: "Toan Tran, Olivera Kotevska, and Li Xiong",
       description: "The first proof of concept using LLM Agents for auto discovering SOTA MIAs.",
       link: "https://arxiv.org/abs/2603.19375",
-      linkText: "arXiv"
+      linkText: "arXiv",
+      demoAppId: "automia"
     },
     {
       title: "Tokens for Learning, Tokens for Unlearning: Mitigating Membership Inference Attacks in Large Language Models via Dual-Purpose Training",
       authors: "Toan Tran, Ruixuan Liu, and Li Xiong",
       description: "The first defense method against MIAs for LLMs without DP.",
+      venue: "ACL'25 (Findings)",
       link: "https://arxiv.org/abs/2502.19726",
       linkText: "arXiv"
     },

@@ -1,11 +1,16 @@
 
 import React, { useState } from 'react';
 import { userProfile } from '../../constants';
-import { Github, Mail, BookOpen, Briefcase, Home, FileText, Newspaper, MapPin, GraduationCap } from 'lucide-react';
+import type { AppId } from '../../types';
+import { Github, Mail, BookOpen, Briefcase, Home, FileText, Newspaper, MapPin, GraduationCap, MonitorPlay } from 'lucide-react';
 
 type PageId = 'home' | 'publications' | 'services' | 'blogs';
 
-export const Portfolio: React.FC = () => {
+interface PortfolioProps {
+  onOpenApp: (id: AppId) => void;
+}
+
+export const Portfolio: React.FC<PortfolioProps> = ({ onOpenApp }) => {
   const [activePage, setActivePage] = useState<PageId>('home');
 
   const pages: { id: PageId; label: string; icon: any }[] = [
@@ -116,24 +121,42 @@ export const Portfolio: React.FC = () => {
             <div className="space-y-4">
                 {userProfile.papers.map((paper, idx) => (
                     <div key={idx} className="bg-white border-2 border-transparent hover:border-[#000080] hover:bg-blue-50 p-4 transition-all shadow-sm">
-                        <h4 className="font-bold text-xl leading-tight mb-2 text-[#000080] font-serif">
-                            "{paper.title}"
-                        </h4>
+                        <div className="flex flex-col md:flex-row md:items-start md:justify-between gap-2 mb-2">
+                            <h4 className="font-bold text-xl leading-tight text-[#000080] font-serif">
+                                "{paper.title}"
+                            </h4>
+                            {paper.venue && (
+                                <span className="shrink-0 self-start bg-[#ffffcc] text-[#000080] border-2 border-white border-b-[#808080] border-r-[#808080] px-2 py-0.5 text-[10px] font-bold font-sans tracking-wider uppercase shadow-[1px_1px_0_#000]">
+                                    {paper.venue}
+                                </span>
+                            )}
+                        </div>
                         <p className="text-gray-700 italic mb-2 border-l-2 border-gray-300 pl-3">
                             {paper.authors}
                         </p>
-                        <div className="flex items-center justify-between bg-gray-100 p-2 rounded-sm border border-gray-200">
+                        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 bg-gray-100 p-2 rounded-sm border border-gray-200">
                             <span className="font-bold text-gray-700 text-xs tracking-wider">{paper.description}</span>
-                            {paper.link && (
-                                <a 
-                                  href={paper.link} 
-                                  target="_blank"
-                                  rel="noopener noreferrer"
-                                  className="text-white bg-[#000080] px-3 py-0.5 text-xs font-bold hover:bg-blue-600 bevel-out active:bevel-in"
-                                >
-                                    VIEW {paper.linkText || 'PAPER'}
-                                </a>
-                            )}
+                            <div className="flex items-center gap-2 shrink-0 flex-wrap">
+                                {paper.demoAppId && (
+                                    <button
+                                      onClick={() => onOpenApp(paper.demoAppId)}
+                                      className="flex items-center gap-1 text-white bg-[#000080] px-3 py-0.5 text-xs font-bold hover:bg-blue-600 bevel-out active:bevel-in"
+                                    >
+                                        <MonitorPlay className="w-3 h-3" />
+                                        VIEW DEMO
+                                    </button>
+                                )}
+                                {paper.link && (
+                                    <a 
+                                      href={paper.link} 
+                                      target="_blank"
+                                      rel="noopener noreferrer"
+                                      className="text-white bg-[#000080] px-3 py-0.5 text-xs font-bold hover:bg-blue-600 bevel-out active:bevel-in"
+                                    >
+                                        VIEW {paper.linkText || 'PAPER'}
+                                    </a>
+                                )}
+                            </div>
                         </div>
                     </div>
                 ))}

@@ -171,7 +171,7 @@ const App: React.FC = () => {
     }
 
     switch (id) {
-      case 'portfolio': return <Portfolio />;
+      case 'portfolio': return <Portfolio onOpenApp={openApp} />;
       case 'notepad': return <Notepad />;
       case 'calculator': return <Calculator />;
       case 'terminal': return <Terminal />;

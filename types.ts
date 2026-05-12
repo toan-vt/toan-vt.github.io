@@ -31,8 +31,10 @@ export interface MockData {
     title: string; 
     authors: string; 
     description: string; 
+    venue?: string;
     link?: string; 
-    linkText?: string 
+    linkText?: string;
+    demoAppId?: AppId;
   }[];
   services: string[];
   blogs: { title: string; date: string; excerpt: string }[];
