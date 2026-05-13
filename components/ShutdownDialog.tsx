@@ -53,7 +53,7 @@ export const ShutdownDialog: React.FC<ShutdownDialogProps> = ({
   if (step !== 'choose') {
     return (
       <div className="absolute inset-0 z-[20000] bg-black text-white">
-        <div className="h-full w-full flex items-center justify-center bg-[#000080] px-6">
+        <div className="h-full w-full flex items-center justify-center bg-[#008080] px-6">
           {step === 'shutdown' && (
             <div className="text-center font-serif">
               <div className="text-xl md:text-3xl mb-8">Windows is shutting down</div>
@@ -85,7 +85,7 @@ export const ShutdownDialog: React.FC<ShutdownDialogProps> = ({
         aria-labelledby="shutdown-title"
         className="w-full max-w-[420px] bg-[#c0c0c0] p-[3px] bevel-window shadow-2xl"
       >
-        <div className="h-6 px-1 flex items-center justify-between bg-gradient-to-r from-[#000080] to-[#1084d0] text-white">
+        <div className="h-6 px-1 flex items-center justify-between bg-gradient-to-r from-[#008080] to-[#1084d0] text-white">
           <div className="flex items-center gap-2 min-w-0">
             <img
               src="https://win98icons.alexmeub.com/icons/png/shut_down_cool-0.png"
