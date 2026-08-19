@@ -122,6 +122,7 @@ export const userProfile: MockData = {
   role: "PhD Student at Emory University, Google/ORNL Intern",
   about: "I am a PhD student in Computer Science at Emory University, advised by Dr. Li Xiong. I build scalable, privacy-preserving ML/LLM systems by developing new LLM training methods, differentially private synthetic data generation algorithms, and emerging agentic frameworks that advance secure and trustworthy AI.",
   updates: [
+    { date: "Aug 2026", text: "AutoMIA got accepted to TMLR."},
     { date: "Apr 2026", text: "Tab-PE got accepted to ICML." },
     { date: "Mar 2026", text: "Excited to demonstrate LLM Agents can explore MIAs with SOTA performance. [arXiv](https://arxiv.org/abs/2603.19375)" },
     { date: "Dec 2025", text: "I'll be interning at Google (Sunnyvale) in Summer 2026." },
@@ -134,20 +135,21 @@ export const userProfile: MockData = {
   ],
   papers: [
     {
+      title: "Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents",
+      authors: "Toan Tran, Olivera Kotevska, and Li Xiong",
+      description: "The first proof of concept using LLM Agents for auto discovering SOTA MIAs.",
+      link: "https://arxiv.org/abs/2603.19375",
+      venue: "TMLR'26",
+      linkText: "arXiv",
+      demoAppId: "automia"
+    },
+    {
       title: "Differentially Private Synthetic Tabular Data via Private Evolution",
       authors: "Toan Tran, Arturs Backurs, Zinan Lin, Victor Reis, Li Xiong, and Sergey Yekhanin",
       description: "30x faster DP high-order tabular data synthesis using Private Evolution.",
       venue: "ICML'26",
       link: "https://arxiv.org/abs/tbd",
       linkText: "arXiv",
-    },
-    {
-      title: "Automated Membership Inference Attacks: Discovering MIA Signal Computations using LLM Agents",
-      authors: "Toan Tran, Olivera Kotevska, and Li Xiong",
-      description: "The first proof of concept using LLM Agents for auto discovering SOTA MIAs.",
-      link: "https://arxiv.org/abs/2603.19375",
-      linkText: "arXiv",
-      demoAppId: "automia"
     },
     {
       title: "Tokens for Learning, Tokens for Unlearning: Mitigating Membership Inference Attacks in Large Language Models via Dual-Purpose Training",
@@ -166,7 +168,7 @@ export const userProfile: MockData = {
     }
   ],
   services: [
-    "Reviewer for AAAI'26, Reliable ML @ NeurIPS'25, SIGSPATIAL 2025",
+    "Reviewer for NeurIPS'26, InfPriv @ NeurIPS'26, AAAI'26, Reliable ML @ NeurIPS'25, SIGSPATIAL 2025",
     "Reviewer for Workshop on Machine Learning for Autonomous Driving @ NeurIPS'22, '23; @ AAAI'25",
     "Reviewer for IEEE Transactions on Dependable and Secure Computing [2024]",
     "Reviewer for ACM Computing Surveys [2024]"
