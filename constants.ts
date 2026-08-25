@@ -144,11 +144,11 @@ export const userProfile: MockData = {
       demoAppId: "automia"
     },
     {
-      title: "Differentially Private Synthetic Tabular Data via Private Evolution",
+      title: "Differentially Private Synthetic Data via APIs 4: Tabular Data",
       authors: "Toan Tran, Arturs Backurs, Zinan Lin, Victor Reis, Li Xiong, and Sergey Yekhanin",
       description: "30x faster DP high-order tabular data synthesis using Private Evolution.",
       venue: "ICML'26",
-      link: "https://arxiv.org/abs/tbd",
+      link: "https://arxiv.org/abs/2606.08259",
       linkText: "arXiv",
     },
     {
