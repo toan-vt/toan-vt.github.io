@@ -14,7 +14,8 @@ const ICONS = {
   ai: 'https://win98icons.alexmeub.com/icons/png/help_book_cool-0.png',
   user: 'https://win98icons.alexmeub.com/icons/png/directory_open_file_mydocs-4.png',
   badminton: '/images/badminton.png',
-  automia: '/images/automia.png'
+  automia: '/images/automia.png',
+  calendar: 'https://win98icons.alexmeub.com/icons/png/calendar-0.png'
 };
 
 export const DEFAULT_APP_ICON = ICONS.ie;
@@ -100,6 +101,16 @@ export const apps: Record<AppId, AppConfig> = {
     description: 'Automated Membership Inference Attacks',
     url: 'https://toan-vt.github.io/automia',
     defaultSize: { width: 900, height: 700 }
+  },
+  'token-usage': {
+    id: 'token-usage',
+    title: 'Token Usage',
+    type: 'website',
+    icon: ICONS.calendar,
+    description: 'My daily Claude Code token usage',
+    url: 'https://toan-vt.github.io/token-usage/',
+    hideBrowserChrome: true,
+    defaultSize: { width: 860, height: 680 }
   }
 };
 

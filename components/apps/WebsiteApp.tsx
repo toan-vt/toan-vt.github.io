@@ -4,12 +4,26 @@ import { ExternalLink, Globe, Lock } from 'lucide-react';
 interface WebsiteAppProps {
   title: string;
   url: string;
+  bare?: boolean;
 }
 
-export const WebsiteApp: React.FC<WebsiteAppProps> = ({ title, url }) => {
+export const WebsiteApp: React.FC<WebsiteAppProps> = ({ title, url, bare }) => {
   const openSite = () => {
     window.open(url, '_blank');
   };
+
+  if (bare) {
+    return (
+      <div className="h-full bg-white border-2 border-[#808080] bevel-in overflow-hidden flex">
+        <iframe
+          src={url}
+          className="flex-1 w-full h-full border-none"
+          title={title}
+          sandbox="allow-same-origin allow-scripts allow-popups allow-forms"
+        />
+      </div>
+    );
+  }
 
   return (
     <div className="flex flex-col h-full bg-[#c0c0c0] text-black">

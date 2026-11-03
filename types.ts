@@ -1,4 +1,4 @@
-export type AppId = 'portfolio' | 'notepad' | 'calculator' | 'terminal' | 'ai-assistant' | 'sketch' | 'browser' | 'tictactoe' | 'minesweeper' | 'badminton' | 'automia';
+export type AppId = 'portfolio' | 'notepad' | 'calculator' | 'terminal' | 'ai-assistant' | 'sketch' | 'browser' | 'tictactoe' | 'minesweeper' | 'badminton' | 'automia' | 'token-usage';
 
 export interface AppConfig {
   id: AppId;
@@ -7,6 +7,7 @@ export interface AppConfig {
   icon?: string; // URL to the icon image
   description: string;
   url?: string;
+  hideBrowserChrome?: boolean; // website apps: show only the page, without address/status bars
   defaultSize?: { width: number; height: number };
 }
 

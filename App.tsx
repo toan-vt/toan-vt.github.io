@@ -212,7 +212,7 @@ const App: React.FC = () => {
         return <div className="p-4">Website URL not configured</div>;
       }
 
-      return <WebsiteApp title={appConfig.title} url={appConfig.url} />;
+      return <WebsiteApp title={appConfig.title} url={appConfig.url} bare={appConfig.hideBrowserChrome} />;
     }
 
     switch (id) {
