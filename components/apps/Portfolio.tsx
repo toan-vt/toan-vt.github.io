@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import { userProfile } from '../../constants';
 import type { AppId } from '../../types';
+import { TokenUsageBadge } from '../TokenUsageBadge';
 import { Github, Mail, BookOpen, Briefcase, Home, FileText, Newspaper, MapPin, GraduationCap, MonitorPlay } from 'lucide-react';
 
 type PageId = 'home' | 'publications' | 'services' | 'blogs';
@@ -218,16 +219,17 @@ export const Portfolio: React.FC<PortfolioProps> = ({ onOpenApp }) => {
   return (
     <div className="h-full flex flex-col bg-[#c0c0c0] text-black font-serif select-text">
       {/* Top Banner / Branding */}
-      <div className="bg-[#000080] text-white p-4 flex items-center gap-4 shrink-0">
-         <img 
-            src="/images/profile.png" 
-            alt="Toan Tran" 
+      <div className="bg-[#000080] text-white p-4 flex flex-wrap md:flex-nowrap items-center gap-x-4 gap-y-2 shrink-0">
+         <img
+            src="/images/profile.png"
+            alt="Toan Tran"
             className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-white border-2 border-white shadow-lg object-cover hidden md:block"
          />
-         <div>
+         <div className="min-w-0">
             <h1 className="text-2xl md:text-3xl font-bold font-sans tracking-wider">{userProfile.name}</h1>
             <h2 className="text-sm md:text-base text-gray-300 font-sans">{userProfile.role}</h2>
          </div>
+         <TokenUsageBadge onOpen={() => onOpenApp('token-usage')} />
       </div>
 
       {/* Navigation Toolbar */}
